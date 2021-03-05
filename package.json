@@ -1,0 +1,28 @@
+{
+  "name": "bullpen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "bullpen": "./bin/bullpen.js"
+  },
+  "scripts": {
+    "prestart": "tsc",
+    "start": "node bin/bullpen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "colors": "^1.4.0",
+    "commander": "^7.1.0",
+    "iconv-lite": "^0.4.24",
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^14.14.31"
+  }
+}
