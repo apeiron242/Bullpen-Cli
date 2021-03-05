@@ -1,7 +1,11 @@
 # Bullpen-Cli
 
 ## Installation
-`tsc && npm link`
+```
+npm i
+
+tsc && npm link
+````
 
 ## Usage
 `bullpen get`
