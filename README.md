@@ -3,5 +3,5 @@
 ## Installation
 `tsc && npm link`
 
-##Usage
+## Usage
 `bullpen get`
