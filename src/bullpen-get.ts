@@ -19,7 +19,7 @@ inquirer
   .prompt([
     {
       type: "list",
-      name: "keyword",
+      name: "tag",
       choices: getTags,
     },
     {
@@ -27,7 +27,12 @@ inquirer
       name: "pages",
       choices: formatPages,
     },
+    {
+      type: "confirm",
+      name: "inOrder",
+      message: "Scrape in time order? (Not precise)",
+    },
   ])
   .then(async (result) => {
-    scrapeBullpen(result.keyword, result.pages);
+    scrapeBullpen(result.tag, result.pages, result.inOrder);
   });
