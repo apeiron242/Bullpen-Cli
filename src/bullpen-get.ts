@@ -11,7 +11,7 @@ const getTags = async () => {
 
 const formatPages = () => {
   const nums: string[] = [];
-  for (let i = 250; i <= 5000; i += 250) {
+  for (let i = 250; i <= 10000; i += 250) {
     nums.push(String(i));
   }
   return nums;
